@@ -1,15 +1,23 @@
 {
   "name": "react-101",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is an example of how to use React and ReactDOM from scratch.",
   "scripts": {
     "build": "webpack",
     "watch": "webpack-dev-server",
     "lint": "standard"
   },
   "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrscrrn/hb-react-101.git"
+  },
+  "author": "Andrés Carreno (hello@andrescarreno.co)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrscrrn/hb-react-101/issues"
+  },
+  "homepage": "https://github.com/andrscrrn/hb-react-101#readme",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
