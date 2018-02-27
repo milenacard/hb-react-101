@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Text extends Component{
+export default class Text extends Component {
   constructor (props) {
     super(props)
 
@@ -11,7 +11,7 @@ export default class Text extends Component{
     this.toggle = this.toggle.bind(this)
   }
 
-  toggle() {
+  toggle () {
     this.setState((prevState) => {
       return {active: !prevState.active}
     })
@@ -24,7 +24,7 @@ export default class Text extends Component{
     }
 
     return (
-      <p onClick={this.toggle} className="text" style={style}>
+      <p onClick={this.toggle} className='text' style={style}>
         {this.props.content}
       </p>
     )

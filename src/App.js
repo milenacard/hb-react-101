@@ -6,8 +6,8 @@ export default function App () {
   return (
     <div>
       <Text content='Colombia' color='blue' />
-      <Text content='Peru' color='yellow'/>
-      <Text content='Argentina' color='red'/>
+      <Text content='Peru' color='yellow' />
+      <Text content='Argentina' color='red' />
     </div>
   )
 }
