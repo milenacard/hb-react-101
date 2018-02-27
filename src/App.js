@@ -32,7 +32,7 @@ export default class App extends Component {
       <React.Fragment>
         <TextRetriever onSubmit={this.updateData} />
         {this.state.countries.map(({name, color}) => {
-          return <Text key={name} content={name} color={color} />
+          return <Text key={name + color} content={name} color={color} />
         })}
       </React.Fragment>
     )

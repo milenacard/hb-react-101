@@ -21,6 +21,7 @@ export default class TextInput extends Component {
   onSubmitHandler (event) {
     event.preventDefault()
     this.props.onSubmit(this.state.value)
+    this.setState({value: ''})
   }
 
   componentDidMount () {
