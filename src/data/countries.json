@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Colombia",
+    "color": "blue"
+  },
+  {
+    "name": "Peru",
+    "color": "yellow"
+  },
+  {
+    "name": "Argentina",
+    "color": "red"
+  },
+  {
+    "name": "Chile",
+    "color": "green"
+  }
+]

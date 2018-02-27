@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
 export default class Text extends Component {
@@ -15,7 +16,6 @@ export default class Text extends Component {
     this.setState((prevState) => {
       return {active: !prevState.active}
     })
-    this.props.callback && this.props.callback()
   }
 
   render () {
@@ -25,8 +25,13 @@ export default class Text extends Component {
 
     return (
       <p onClick={this.toggle} className='text' style={style}>
-        {this.props.content}
+        {this.props.content.toUpperCase()}
       </p>
     )
   }
+}
+
+Text.propTypes = {
+  content: PropTypes.string,
+  color: PropTypes.string
 }
