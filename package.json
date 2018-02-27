@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/andrscrrn/hb-react-101#readme",
   "dependencies": {
+    "randomcolor": "^0.5.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
@@ -27,6 +28,7 @@
     "babel-loader": "^7.1.3",
     "babel-preset-react": "^6.24.1",
     "html-webpack-plugin": "^2.30.1",
+    "prop-types": "^15.6.1",
     "standard": "^11.0.0",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
