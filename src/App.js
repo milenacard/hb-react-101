@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
 import randomColor from 'randomcolor'
 
-import TextRetriever from './components/TextRetriever'
-import Text from './components/Text'
+import { Home, Add } from './pages'
+import { Menu } from './components'
 
 export default class App extends Component {
   constructor (props) {
@@ -29,12 +30,15 @@ export default class App extends Component {
 
   render () {
     return (
-      <React.Fragment>
-        <TextRetriever onSubmit={this.updateData} />
-        {this.state.countries.map(({name, color}) => {
-          return <Text key={name + color} content={name} color={color} />
-        })}
-      </React.Fragment>
+      <Router>
+        <Fragment>
+          <Menu />
+          <Route exact path='/'
+            render={() => <Home data={this.state.countries} />} />
+          <Route exact path='/add'
+            render={() => <Add updateData={this.updateData} />} />
+        </Fragment>
+      </Router>
     )
   }
 }

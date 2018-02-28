@@ -24,7 +24,7 @@ export default class Text extends Component {
     }
 
     return (
-      <p onClick={this.toggle} className='text' style={style}>
+      <p className='text' onClick={this.toggle} style={style}>
         {this.props.content.toUpperCase()}
       </p>
     )

@@ -20,8 +20,10 @@ export default class TextInput extends Component {
 
   onSubmitHandler (event) {
     event.preventDefault()
-    this.props.onSubmit(this.state.value)
-    this.setState({value: ''})
+    if (this.state.value) {
+      this.props.onSubmit(this.state.value)
+      this.setState({value: ''})
+    }
   }
 
   componentDidMount () {
@@ -30,7 +32,7 @@ export default class TextInput extends Component {
 
   render () {
     return (
-      <form onSubmit={this.onSubmitHandler}>
+      <form className='text-retriever' onSubmit={this.onSubmitHandler}>
         <input
           type='text'
           value={this.state.value}
